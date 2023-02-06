@@ -1,0 +1,35 @@
+*{
+    background-color: hwb(120deg 19% 81%);
+}
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    }
+  
+  #child-grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: 600px;
+    height: 500px;
+  }
+  .item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+/*   #item:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+} */
+
+
+#grid-range {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+
+}
+
+  
