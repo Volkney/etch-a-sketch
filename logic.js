@@ -1,4 +1,15 @@
 var childGrid = document.getElementById('child-grid');
+const value = document.getElementById('grid-value');
+const input = document.getElementById('grid-range');
+
+/* value for button */
+
+value.textContent = input.value;
+input.addEventListener("input", (event) => {
+    value.textContent = event.target.value;
+});
+
+/* creating divs for grid */
 
 for (let i = 0 ; i < 256 ; i ++){
     
@@ -15,3 +26,4 @@ for (let i = 0 ; i < items.length ; i++) {
         this.style.border = `1px solid ${blackColor}`;
     });
 }
+

@@ -19,17 +19,16 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
     }
 
-/*   #item:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-} */
-
+#input-container{
+    display: flex;
+    flex-direction: row;
+    padding: none;
+}
 
 #grid-range {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    display: flex;
-
+    box-sizing: border-box;
+    width: 10rem;    
 }
+
 
   
