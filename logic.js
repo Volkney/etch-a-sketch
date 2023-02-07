@@ -34,13 +34,26 @@ function generateGrid(){
 
 function addHoverEvent (){
     for (let i = 0 ; i < items.length ; i++) {
-        items[i].addEventListener('mouseenter', function() {
+        items[i].addEventListener('mousedown', function(event) {
             this.style.backgroundColor = blackColor;
             this.style.border = `1px solid ${blackColor}`;
+            if (event.buttons === 1) {
+                this.style.backgroundColor = blackColor;
+                this.style.border = `1px solid ${blackColor}`;
+            }
+        });
+        items[i].addEventListener('mousemove', function(event) {
+            if (event.buttons === 1) {
+                this.style.backgroundColor = blackColor;
+                this.style.border = `1px solid ${blackColor}`;
+            }
+        });
+        items[i].addEventListener('mouseup', function() {
+            this.style.backgroundColor = "initial";
+            this.style.border = "initial";
         });
     }    
 }
-
 //generate the initial grid//
 generateGrid();
 
